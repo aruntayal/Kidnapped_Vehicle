@@ -260,7 +260,7 @@ void ParticleFilter::resample() {
       INITIAL_WEIGHT
     };
 
-    resampled_particles.push_back(p);
+    resampled_particles.push_back(particles[i]);
   }
 
   this->particles = resampled_particles;
